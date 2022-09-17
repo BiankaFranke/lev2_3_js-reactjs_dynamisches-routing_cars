@@ -6,7 +6,7 @@ import cars from "../Components/cars";
 const DetailCar = () => {
     let params = useParams();
     console.log(params.id);
-    let car = cars[params.id];
+    let car = cars[params.id-1];
     return (
         <div className="DataCars">
         <h2>{car.CarMake}</h2>
